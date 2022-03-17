@@ -1,0 +1,28 @@
+POST http://localhost:4002/products
+content-type: application/json
+
+{
+    "name": "Folha de papel",
+    "price": 1
+}
+
+###
+GET http://localhost:4002/products
+
+###
+GET http://localhost:4002/products/914e325c-65f7-4178-897f-c22c03632019
+
+
+###
+PUT http://localhost:4002/products/f44adaa0-f85b-47d5-9541-1dd979b6f1f9
+content-type: application/json
+
+{
+    "name": "caderno  4",
+    "price": 20
+}
+
+
+###
+DELETE http://localhost:4002/products/f44adaa0-f85b-47d5-9541-1dd979b6f1f9
+content-type: application/json
